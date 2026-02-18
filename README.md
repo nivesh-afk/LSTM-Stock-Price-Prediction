@@ -6,7 +6,7 @@ This project uses a Long Short-Term Memory (LSTM) neural network to predict next
 
 The model learns temporal dependencies in time-series data and generates forecasts using a sliding window (lookback) approach.
 
-> ⚠️ Disclaimer: This project is for educational purposes only and does not constitute financial or investment advice.
+> This project is for educational purposes only and does not constitute financial or investment advice.
 
 ---
 
