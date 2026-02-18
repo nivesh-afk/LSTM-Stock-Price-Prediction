@@ -1,61 +1,65 @@
-# LSTM-Stock-Price-Prediction
-Overview
+# 📈 LSTM Stock Price Prediction
 
-This project implements a Long Short-Term Memory (LSTM) neural network to predict next-day stock closing prices using historical market data.
+## Overview
 
-The model is trained on past closing prices and learns temporal dependencies to forecast future price movements.
+This project uses a Long Short-Term Memory (LSTM) neural network to predict next-day stock closing prices based on historical market data.
 
-⚠️ This project is for educational purposes only and does not constitute financial advice.
+The model learns temporal dependencies in time-series data and generates forecasts using a sliding window (lookback) approach.
 
-🚀 Features
+> ⚠️ Disclaimer: This project is for educational purposes only and does not constitute financial or investment advice.
 
-Historical stock data retrieval using yfinance
+---
 
-Data preprocessing with MinMaxScaler
+## 🚀 Features
 
-Sequence window (lookback) generation
+- Historical stock data retrieval using `yfinance`
+- Data preprocessing with `MinMaxScaler`
+- Sliding window sequence generation
+- LSTM-based deep learning model
+- Inverse scaling for real price comparison
+- Actual vs Predicted visualization
+- Next-day price forecasting
+- Performance evaluation metrics (RMSE, MAE, Directional Accuracy)
 
-LSTM-based deep learning model
+---
 
-Inverse scaling for real price comparison
+## 🧠 Model Architecture
 
-Actual vs Predicted visualization
+- Input: Time-series sequences (lookback window)
+- LSTM Layer(s)
+- Dense output layer
+- Loss Function: Mean Squared Error (MSE)
+- Optimizer: Adam
 
-Next-day price forecasting
+---
 
-Model performance evaluation
+## 📊 Model Evaluation
 
-🧠 Model Architecture
+The model performance is evaluated using:
 
-Input: Sliding window time-series sequences
+- **RMSE (Root Mean Squared Error)**  
+  Measures overall prediction error magnitude.
 
-LSTM layer(s)
+- **MAE (Mean Absolute Error)**  
+  Measures average absolute difference between actual and predicted values.
 
-Dense output layer
+- **Directional Accuracy**  
+  Measures how often the model correctly predicts price movement direction (up or down).
 
-Loss Function: Mean Squared Error (MSE)
+---
 
-Optimizer: Adam
+## 📉 Output
 
-📊 Evaluation Metrics
+The notebook provides:
 
-The following metrics are used to evaluate performance:
+- Actual vs Predicted price comparison plot
+- Highlighted next-day forecast
+- Performance summary printed in console
+- Optional prediction table with error values
 
-RMSE (Root Mean Squared Error)
+---
 
-MAE (Mean Absolute Error)
 
-Directional Accuracy
-
-Directional accuracy measures how often the model correctly predicts price movement direction (up or down).
-
-📉 Example Output
-
-Actual vs Predicted price comparison plot
-
-Highlighted next-day forecast
-
-Model performance summary printed in console
 
 
 
